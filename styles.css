@@ -1,0 +1,14 @@
+@media screen and (max-device-width:480px) and (orientation: portrait){
+
+}
+@media screen and (min-width:769px){
+
+}
+.premain{
+    background-color: linear-gradient(to bottom right, #30E45D, #A0EC7C);
+}
+.premain p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 150%;
+}
