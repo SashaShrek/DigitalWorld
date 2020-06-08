@@ -1,14 +1,34 @@
+body{
+    margin: 0%;
+}
+.pr{
+    box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5);
+  filter: blur(1px);
+
+}
+.premain{
+    background: linear-gradient(to bottom left, #992CF9, #DDD6EF);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.premain p{
+  
+    font-style: oblique;
+    font-size: 150%;
+    text-align: center;
+}
+.premain img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border-radius: 50%;
+}
 @media screen and (max-device-width:480px) and (orientation: portrait){
 
 }
 @media screen and (min-width:769px){
-
-}
-.premain{
-    background-color: linear-gradient(to bottom right, #30E45D, #A0EC7C);
-}
-.premain p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    font-size: 150%;
+    .premain{
+        min-height: 50vh;
+    }
 }
