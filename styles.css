@@ -6,8 +6,14 @@ body{
   filter: blur(1px);
 
 }
-.premain{
+.pregrad{
     background: linear-gradient(to bottom left, #992CF9, #DDD6EF);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.premain{
+    margin-top: 1%;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -28,7 +34,7 @@ body{
 
 }
 @media screen and (min-width:769px){
-    .premain{
+    .premain, .pregrad{
         min-height: 50vh;
     }
 }
