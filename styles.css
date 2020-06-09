@@ -45,7 +45,7 @@ body{
         height: 20vw;
     }
 }
-@media screen and (max-device-width:480px) and (orientation: portrait){
+@media screen and (max-device-width:480px) and (orientation: landscape){
     .premain hr{
         width: 30%;
     }
