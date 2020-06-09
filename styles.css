@@ -39,6 +39,16 @@ body{
     .premain hr{
         width: 50%;
     }
+    .premain img{
+        margin-top: 1%;
+        width: 20vw;
+        height: 20vw;
+    }
+}
+@media screen and (max-device-width:480px) and (orientation: portrait){
+    .premain hr{
+        width: 30%;
+    }
 }
 @media screen and (min-width:769px){
     .premain hr{
