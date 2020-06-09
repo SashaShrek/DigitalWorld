@@ -45,6 +45,11 @@ body{
         height: 20vw;
     }
 }
+@media screen and (max-device-width:480px) and (orientation: landscape){
+    .premain hr{
+        width: 30%;
+    }
+}
 @media screen and (min-width:769px){
     .premain hr{
         width: 30%;
