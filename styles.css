@@ -35,14 +35,33 @@ body{
     margin-left: auto; 
     margin-right: auto;
 }
+.main p{
+    color: DimGray;
+    font-size: 28px;
+}
+.main_text p{
+    color: DimGray;
+    font-size: 22px;
+    text-indent: 20px;
+}
+.missions p{
+    color: DimGray;
+    font-size: 22px;
+    text-indent: 20px;
+}
 @media screen and (max-device-width:480px) and (orientation: portrait){
     .premain hr{
         width: 50%;
     }
     .premain img{
         margin-top: 1%;
-        width: 20vw;
-        height: 20vw;
+        width: 40vw;
+        height: 40vw;
+    }
+    .main{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (max-device-width:480px) and (orientation: landscape){
@@ -53,5 +72,10 @@ body{
 @media screen and (min-width:769px){
     .premain hr{
         width: 30%;
+    }
+    .main{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
