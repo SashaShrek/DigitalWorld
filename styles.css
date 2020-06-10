@@ -39,7 +39,7 @@ body{
     color: DimGray;
     font-size: 28px;
 }
-.main_text p, .missions p, .lawone p, .moveup p, .facile p, .precession p{
+.main_text p, .missions p, .lawone p, .moveup p, .facile p, .precession p, .svyaz p{
     color: DimGray;
     font-size: 22px;
     text-indent: 20px;
@@ -47,6 +47,12 @@ body{
 .lawone, .moveup, .facile, .precession{
     text-align: center;
 }
+.svyaz ul{
+    color: DimGray;
+    font-size: 22px;
+    text-indent: 20px;
+}
+.svyaz p{ text-align: right; }
 
 @media screen and (max-device-width:480px) and (orientation: portrait){
     .premain hr{
