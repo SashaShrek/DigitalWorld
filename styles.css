@@ -39,16 +39,15 @@ body{
     color: DimGray;
     font-size: 28px;
 }
-.main_text p{
+.main_text p, .missions p, .lawone p, .moveup p, .facile p, .precession p{
     color: DimGray;
     font-size: 22px;
     text-indent: 20px;
 }
-.missions p{
-    color: DimGray;
-    font-size: 22px;
-    text-indent: 20px;
+.lawone, .moveup, .facile, .precession{
+    text-align: center;
 }
+
 @media screen and (max-device-width:480px) and (orientation: portrait){
     .premain hr{
         width: 50%;
@@ -62,6 +61,30 @@ body{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .facile > #facileImg{
+        overflow-x: hidden;
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    .facile img{
+        width: 50vw;
+        display: inline-block;
+        margin-right: 1%;
+        border-radius: 10px;
+    }
+    .precession > #precessionImg{
+        overflow-x: hidden;
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .precession img{
+        width: 38vw;
+        display: inline-block;
+        margin-right: 1%;
+        border-radius: 10px;
     }
 }
 @media screen and (max-device-width:480px) and (orientation: landscape){
@@ -77,5 +100,29 @@ body{
         width: 50%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .facile > #facileImg{
+        overflow-x: hidden;
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .facile img{
+        width: 25vw;
+        display: inline-block;
+        margin-right: 1%;
+        border-radius: 10px;
+    }
+    .precession > #precessionImg{
+        overflow-x: hidden;
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .precession img{
+        width: 13vw;
+        display: inline-block;
+        margin-right: 1%;
+        border-radius: 10px;
     }
 }
