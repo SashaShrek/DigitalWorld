@@ -7,7 +7,8 @@ body{
 
 }
 .pregrad{
-    background: linear-gradient(to bottom left, #992CF9, #DDD6EF);
+    background: linear-gradient(to bottom left, #0066ff, #ccffff);
+    /*#992CF9, #DDD6EF*/
     width: 100%;
     text-align: center;
     padding-bottom: 1%;
