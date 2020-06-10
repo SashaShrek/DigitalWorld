@@ -69,7 +69,7 @@ body{
         margin: auto;
     }
     .facile img{
-        width: 50vw;
+        width: 80vw;
         display: inline-block;
         margin-right: 1%;
         border-radius: 10px;
@@ -77,11 +77,11 @@ body{
     .precession > #precessionImg{
         overflow-x: hidden;
         display: flex;
-        width: 50%;
+        width: 70%;
         margin: auto;
     }
     .precession img{
-        width: 38vw;
+        width: 42vw;
         display: inline-block;
         margin-right: 1%;
         border-radius: 10px;
