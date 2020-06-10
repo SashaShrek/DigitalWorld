@@ -97,6 +97,35 @@ body{
     .premain hr{
         width: 30%;
     }
+    .main{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .facile > #facileImg{
+        overflow-x: hidden;
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .facile img{
+        width: 25vw;
+        display: inline-block;
+        margin-right: 1%;
+        border-radius: 10px;
+    }
+    .precession > #precessionImg{
+        overflow-x: hidden;
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .precession img{
+        width: 13vw;
+        display: inline-block;
+        margin-right: 1%;
+        border-radius: 10px;
+    }
 }
 @media screen and (min-width:769px){
     .premain hr{
