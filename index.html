@@ -4,117 +4,147 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" href="favicon1.png" type="image/png">
+        <script src="http://188.227.86.17/React/react.dev.js"></script>
+        <script src="http://188.227.86.17/React/react-dom.dev.js"></script>
+        <script src="http://188.227.86.17/React/babel.js"></script>
+        <script src="http://188.227.86.17/jQuery/jQuery.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Who I am?</title>
     </head>
-    <body onload="load()" link="DimGray" vlink="DimGray" alink="DimGray">
-        <div class="pregrad"> 
-            <div class="premain">
-                <img src="I.jpg" alt="Я">
-                <p>Александр — C#, Node.js и просто Backend</p>
-                <hr color="Silver" size=1>
-                <p>Кодинг как смысл жизни...</p>
-            </div>
-        </div>
-        <div class="main">
-            <p>Немного о себе:</p>
-            <div class="main_text">
-                <p>Привет! Меня зовут Александр, родился и живу в России. IT начал интересоваться в 14 лет (на данный момент 20). Очень хотел научиться программировать —
-                    создавать, проявляя творческие качества. Я считаю, что за разработчиками ПО будущее — они не только делают жизнь людей лучше
-                    , но и являются двигателем прогресса, эволюции мира в целом.
-                </p>
-                <p>
-                    Первым моим языком программирования был C#. На его изучение (+ WPF, WinForms) потратил 2.5 года. Очень уж он мне нравится. Активно использовал его 3 года для двух проектов: 
-                    "Facile — система автоматизации ресторанного бизнеса" и "Precession(МУПП)".
-                </p>
-                <p>
-                    Вскоре после этого увлёкся web разработкой (HTML, CSS, JS + jQuery, React). Спустя время я с головой погрузился в тёмный, и с первого взгляда страшный,
-                    мир backend`а и понял, что это то, чем я хочу заниматься. Настройка серверов, создание API для обработки различных запросов,
-                    автоматизация всех процессов, работа с БД — романтика, о которой в Париже могут только мечтать. Преимущественно использую Node.js, MongoDB, 
-                    Nginx и изредка подключаю другие программы или скрипты для быстрой отдачи.
-                </p>
-            </div>
-            <hr size=1 color="Silver">
-            <p>Цель:</p>
-            <div class="missions">
-                <p>Когда меня спрашивают: "Какая у тебя цель?", мне иногда трудно ответить, потому что добиться её не так просто.
-                    Для её достижения есть план, который иногда меняется от вихря обстоятельств.
-                </p>
-                <p>
-                    Бóльшая часть времени у меня уходит на работу с терминалом и совершенствование своих профессиональных навыков. Всё для того, чтобы 
-                    быть частью хорошей команды и постоянно развиваться, принося пользу людям, "далёким" от IT технологий, и прокладывая дорогу для прогресса.
-                </p>
-            </div>
-            <hr size=1 color="Silver">
-            <i><p style="text-align: right; font-size: 18px;">09.06.2020</p></i>
-            <p>Несколько работ:</p>
-            <div class="lawone">
-                <p>LAWONE</p>
-                <p>Юридическое сопровождение исполнительного производства</p>
-                <p>Не оптимизированно для iPad</p>
-                <p><a href="http://lawone.ru">Открыть</a></p>
-                <p><<<==>>></p>
-            </div>
-            <div class="moveup">
-                <p>MOVEUP</p>
-                <p>Создание сайтов</p>
-                <p>Не оптимизированно для iPad</p>
-                <p><a href="http://moveup2020.ru">Открыть</a></p>
-                <p><<<==>>></p>
-            </div>
-            <div class="facile">
-                <p>FACILE</p>
-                <p>На скриншотах программа для официантов</p>
-                <p>Подобных программ должно быть несколько — для каждой профессии ресторанного бизнеса, но, к 
-                    сожалению, проект заморожен на какое-то время</p>
-                <div id="facileImg">
-                    <a href="http://188.227.86.17/whoiam/facile3.png" target="_blank">
-                        <img id="f0" src="http://188.227.86.17/whoiam/facile3.png" alt="facile">
-                    </a>
-                    <a href="http://188.227.86.17/whoiam/facile2.png" target="_blank">
-                        <img src="http://188.227.86.17/whoiam/facile2.png" alt="facile">
-                    </a>
-                    <a href="http://188.227.86.17/whoiam/facile1.png" target="_blank">
-                        <img src="http://188.227.86.17/whoiam/facile1.png" alt="facile">
-                    </a>
-                    <a href="http://188.227.86.17/whoiam/facile.png" target="_blank">
-                        <img src="http://188.227.86.17/whoiam/facile.png" alt="facile">
-                    </a>
-                </div>
-                <p><<<==>>></p>
-            </div>
-            <div class="precession">
-                <p>PRECESSION</p>
-                <p>Приложение для МУПП (Международной Универсальной Партнёрской Программы)</p>
-                <p>Создано для ограниченного круга лиц</p>
-                <div id="precessionImg">
-                    <a href="http://188.227.86.17/whoiam/prec.png" target="_blank">
-                        <img id="p0" src="http://188.227.86.17/whoiam/prec.png" alt="precession">
-                    </a>
-                    <a href="http://188.227.86.17/whoiam/prec1.png" target="_blank">
-                        <img src="http://188.227.86.17/whoiam/prec1.png" alt="precession">
-                    </a>
-                    <a href="http://188.227.86.17/whoiam/prec2.png" target="_blank">
-                        <img src="http://188.227.86.17/whoiam/prec2.png" alt="precession">
-                    </a>
-                    <a href="http://188.227.86.17/whoiam/prec3.png" target="_blank">
-                        <img src="http://188.227.86.17/whoiam/prec3.png" alt="precession">
-                    </a>
-                </div>
-                <p><<<==>>></p>
-                <p>Другой софт — это в основном мелкие программы и серверное ПО</p>
-            </div>
-            <hr size=1 color="Silver">
-            <p>Связь:</p>
-            <div class="svyaz">
-                <ul>
-                    <li>Почта: jmatyushin@gmail.com</li>
-                    <li>Номер: 8 952 766-82-07</li>
-                    <li>Телега: @Sasha_Shrek</li>
-                </ul>
-                <p>Лучше через сокеты (с) Я</p>
-            </div>
-        </div>
+    <body onload="new Loader().Load()" link="DimGray" vlink="DimGray" alink="DimGray">
+        <div id="root"></div>
+        <script type="text/babel">
+            class Header extends React.Component{
+                Create(){
+                    const premain = <div className="premain">
+                            <img src="I.jpg" alt="Я"/>
+                            <p>Александр — C#, Node.js и просто Backend</p>
+                            <hr color="Silver" size='1'/>
+                            <p>Кодинг как смысл жизни...</p>
+                        </div>;
+                    const pregrad = <div className="pregrad">{premain}</div>;
+                }
+                render(){
+                    return this.Create();
+                }
+            }
+            class Main extends React.Component{
+                Create(){
+                    const main_text = <div className="main_text">
+                            <p>Привет! Меня зовут Александр, родился и живу в России. IT начал интересоваться в 14 лет (на данный момент 20). Очень хотел научиться программировать —
+                                создавать, проявляя творческие качества. Я считаю, что за разработчиками ПО будущее — они не только делают жизнь людей лучше
+                                , но и являются двигателем прогресса, эволюции мира в целом.
+                            </p>
+                            <p>
+                                Первым моим языком программирования был C#. На его изучение (+ WPF, WinForms) потратил 2.5 года. Очень уж он мне нравится. Активно использовал его 3 года для двух проектов: 
+                                "Facile — система автоматизации ресторанного бизнеса" и "Precession(МУПП)".
+                            </p>
+                            <p>
+                                Вскоре после этого увлёкся web разработкой (HTML, CSS, JS + jQuery, React). Спустя время я с головой погрузился в тёмный, и с первого взгляда страшный,
+                                мир backend`а и понял, что это то, чем я хочу заниматься. Настройка серверов, создание API для обработки различных запросов,
+                                автоматизация всех процессов, работа с БД — романтика, о которой в Париже могут только мечтать. Преимущественно использую Node.js, MongoDB, 
+                                Nginx и изредка подключаю другие программы или скрипты для быстрой отдачи.
+                            </p>
+                        </div>;
+                    const missions = <div className="missions">
+                            <p>Когда меня спрашивают: "Какая у тебя цель?", мне иногда трудно ответить, потому что добиться её не так просто.
+                                Для её достижения есть план, который иногда меняется от вихря обстоятельств.
+                            </p>
+                            <p>
+                                Бóльшая часть времени у меня уходит на работу с терминалом и совершенствование своих профессиональных навыков. Всё для того, чтобы 
+                                быть частью хорошей команды и постоянно развиваться, принося пользу людям, "далёким" от IT технологий, и прокладывая дорогу для прогресса.
+                            </p>
+                        </div>
+                    const lawone = <div className="lawone">
+                            <p>LAWONE</p>
+                            <p>Юридическое сопровождение исполнительного производства</p>
+                            <p>Не оптимизированно для iPad</p>
+                            <p><a href="http://lawone.ru">Открыть</a></p>
+                            <p>===============</p>
+                        </div>
+                    const moveup = <div className="moveup">
+                            <p>MOVEUP</p>
+                            <p>Создание сайтов</p>
+                            <p>Не оптимизированно для iPad</p>
+                            <p><a href="http://moveup2020.ru">Открыть</a></p>
+                            <p>===============</p>
+                        </div>
+                    const facile = <div className="facile">
+                            <p>FACILE</p>
+                            <p>На скриншотах программа для официантов</p>
+                            <p>Подобных программ должно быть несколько — для каждой профессии ресторанного бизнеса, но, к 
+                                сожалению, проект заморожен на какое-то время</p>
+                            <div id="facileImg">
+                                <a href="http://188.227.86.17/whoiam/facile3.png" target="_blank">
+                                    <img id="f0" src="http://188.227.86.17/whoiam/facile3.png" alt="facile"/>
+                                </a>
+                                <a href="http://188.227.86.17/whoiam/facile2.png" target="_blank">
+                                    <img src="http://188.227.86.17/whoiam/facile2.png" alt="facile"/>
+                                </a>
+                                <a href="http://188.227.86.17/whoiam/facile1.png" target="_blank">
+                                    <img src="http://188.227.86.17/whoiam/facile1.png" alt="facile"/>
+                                </a>
+                                <a href="http://188.227.86.17/whoiam/facile.png" target="_blank">
+                                    <img src="http://188.227.86.17/whoiam/facile.png" alt="facile"/>
+                                </a>
+                            </div>
+                            <p>===============</p>
+                        </div>
+                    const precession = <div className="precession">
+                            <p>PRECESSION</p>
+                            <p>Приложение для МУПП (Международной Универсальной Партнёрской Программы)</p>
+                            <p>Создано для ограниченного круга лиц</p>
+                            <div id="precessionImg">
+                                <a href="http://188.227.86.17/whoiam/prec.png" target="_blank">
+                                    <img id="p0" src="http://188.227.86.17/whoiam/prec.png" alt="precession"/>
+                                </a>
+                                <a href="http://188.227.86.17/whoiam/prec1.png" target="_blank">
+                                    <img src="http://188.227.86.17/whoiam/prec1.png" alt="precession"/>
+                                </a>
+                                <a href="http://188.227.86.17/whoiam/prec2.png" target="_blank">
+                                    <img src="http://188.227.86.17/whoiam/prec2.png" alt="precession"/>
+                                </a>
+                                <a href="http://188.227.86.17/whoiam/prec3.png" target="_blank">
+                                    <img src="http://188.227.86.17/whoiam/prec3.png" alt="precession"/>
+                                </a>
+                            </div>
+                            <p>===============</p>
+                            <p>Другой софт — это в основном мелкие программы и серверное ПО</p>
+                        </div>
+                    const svyaz = <div className="svyaz">
+                            <ul>
+                                <li>Почта: jmatyushin@gmail.com</li>
+                                <li>Номер: 8 952 766-82-07</li>
+                                <li>Телега: @Sasha_Shrek</li>
+                            </ul>
+                            <p>Лучше через сокеты (с) Я</p>
+                        </div>
+                    const main = <div className="main">
+                            <p>Немного о себе:</p>
+                            {main_text}
+                            <hr size='1' color="Silver"/>
+                            <p>Цель:</p>
+                            {missions}
+                            <hr size='1' color="Silver"/>
+                            <i><p style="text-align: right; font-size: 18px;">09.06.2020</p></i>
+                            <p>Несколько работ:</p>
+                            {lawone}
+                            {moveup}
+                            {facile}
+                            {precession}
+                            <hr size='1' color="Silver"/>
+                            <p>Связь:</p>
+                        </div>;
+                }
+                render(){
+                    return this.Create();
+                }
+            }
+            RenderDOM.render(
+                (() => <div><Header/><Main/></div>)(),
+                document.getElementById("root")
+            )
+        </script>
         <script src="scripts.js"></script>
     </body>
 </html>
