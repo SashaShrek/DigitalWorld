@@ -14,20 +14,24 @@
     <body onload="new Loader().Load()" link="DimGray" vlink="DimGray" alink="DimGray">
         <div id="root"></div>
         <script type="text/babel">
+            'use strict';
+        //header
             class Header extends React.Component{
                 Create(){
                     const premain = <div className="premain">
                             <img src="I.jpg" alt="Я"/>
-                            <p>Александр — C#, Node.js и просто Backend</p>
+                            <p>Саша — просто Backend (+ немного front)</p>
                             <hr color="Silver" size='1'/>
                             <p>Кодинг как смысл жизни...</p>
                         </div>;
                     const pregrad = <div className="pregrad">{premain}</div>;
+                    return pregrad;
                 }
                 render(){
                     return this.Create();
                 }
             }
+        //main & footer
             class Main extends React.Component{
                 Create(){
                     const main_text = <div className="main_text">
@@ -37,7 +41,7 @@
                             </p>
                             <p>
                                 Первым моим языком программирования был C#. На его изучение (+ WPF, WinForms) потратил 2.5 года. Очень уж он мне нравится. Активно использовал его 3 года для двух проектов: 
-                                "Facile — система автоматизации ресторанного бизнеса" и "Precession(МУПП)".
+                                "Facile — система автоматизации ресторанного бизнеса" и "Precession (МУПП)".
                             </p>
                             <p>
                                 Вскоре после этого увлёкся web разработкой (HTML, CSS, JS + jQuery, React). Спустя время я с головой погрузился в тёмный, и с первого взгляда страшный,
@@ -78,15 +82,6 @@
                                 <a href="http://188.227.86.17/whoiam/facile3.png" target="_blank">
                                     <img id="f0" src="http://188.227.86.17/whoiam/facile3.png" alt="facile"/>
                                 </a>
-                                <a href="http://188.227.86.17/whoiam/facile2.png" target="_blank">
-                                    <img src="http://188.227.86.17/whoiam/facile2.png" alt="facile"/>
-                                </a>
-                                <a href="http://188.227.86.17/whoiam/facile1.png" target="_blank">
-                                    <img src="http://188.227.86.17/whoiam/facile1.png" alt="facile"/>
-                                </a>
-                                <a href="http://188.227.86.17/whoiam/facile.png" target="_blank">
-                                    <img src="http://188.227.86.17/whoiam/facile.png" alt="facile"/>
-                                </a>
                             </div>
                             <p>===============</p>
                         </div>
@@ -97,15 +92,6 @@
                             <div id="precessionImg">
                                 <a href="http://188.227.86.17/whoiam/prec.png" target="_blank">
                                     <img id="p0" src="http://188.227.86.17/whoiam/prec.png" alt="precession"/>
-                                </a>
-                                <a href="http://188.227.86.17/whoiam/prec1.png" target="_blank">
-                                    <img src="http://188.227.86.17/whoiam/prec1.png" alt="precession"/>
-                                </a>
-                                <a href="http://188.227.86.17/whoiam/prec2.png" target="_blank">
-                                    <img src="http://188.227.86.17/whoiam/prec2.png" alt="precession"/>
-                                </a>
-                                <a href="http://188.227.86.17/whoiam/prec3.png" target="_blank">
-                                    <img src="http://188.227.86.17/whoiam/prec3.png" alt="precession"/>
                                 </a>
                             </div>
                             <p>===============</p>
@@ -126,7 +112,7 @@
                             <p>Цель:</p>
                             {missions}
                             <hr size='1' color="Silver"/>
-                            <i><p style="text-align: right; font-size: 18px;">09.06.2020</p></i>
+                            <p id="date">14.07.2020 (ред.)</p>
                             <p>Несколько работ:</p>
                             {lawone}
                             {moveup}
@@ -134,13 +120,15 @@
                             {precession}
                             <hr size='1' color="Silver"/>
                             <p>Связь:</p>
+                            {svyaz}
                         </div>;
+                        return main;
                 }
                 render(){
                     return this.Create();
                 }
             }
-            RenderDOM.render(
+            ReactDOM.render(
                 (() => <div><Header/><Main/></div>)(),
                 document.getElementById("root")
             )

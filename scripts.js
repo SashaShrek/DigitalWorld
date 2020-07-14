@@ -1,33 +1,46 @@
 class Loader{
     Load(){
         let animation = new Animation();
-        let size = $("#f0").clientWidth;
-        let proc = $('#f0').clientWidth * 0.01;
-        animation.aFacile(size, proc, 0);
-        size = $('#p0').clientWidth;
-        proc = $('#p0').clientWidth * 0.01;
-        animation.aPrec(size, proc, 0);
+        animation.aFacile();
+        setTimeout(animation.aPrec, 1000);
     }
 }
 
-class Amimation{
-    aFacile(s, p, i){
-        if(i == Math.ceil(s * 4 + p * 3)){
-            $('#facileImg').scrollLeft = -i;
-            
-            setTimeout(aFacile, 50, s, p, 0);
-        }else{
-            $('#facileImg').scrollLeft = i;
-            setTimeout(aFacile, 13, s, p, i + 1);
-        }
+class Animation{
+    aFacile(){
+        let data = [
+            "http://188.227.86.17/whoiam/facile3.png",
+            "http://188.227.86.17/whoiam/facile2.png",
+            "http://188.227.86.17/whoiam/facile1.png",
+            "http://188.227.86.17/whoiam/facile.png"
+        ]
+        let i = 0;
+        setInterval(() => {
+            $("#f0").css({"opacity": 0.2});
+            setTimeout(() => {
+                $("#f0")[0].src = data[i];
+                $("#f0").css({"opacity": 1});
+                $("#facileImg > a").attr("href", data[i]);
+            }, 400);
+            i = i == 3 ? 0 : i + 1;
+        }, 4000);
     }
-    aPrec(s, p, i){
-        if(i == Math.ceil(s * 4 + p * 3)){
-            $('#precessionImg').scrollLeft = -i;
-            setTimeout(aPrec, 15, s, p, 0);
-        }else{
-            $('#precessionImg').scrollLeft = i;
-            setTimeout(aPrec, 15, s, p, i + 1);
-        }
+    aPrec(){
+        let data = [
+            "http://188.227.86.17/whoiam/prec.png",
+            "http://188.227.86.17/whoiam/prec1.png",
+            "http://188.227.86.17/whoiam/prec2.png",
+            "http://188.227.86.17/whoiam/prec3.png"
+        ]
+        let i = 0;
+        setInterval(() => {
+            $("#p0").css({"opacity": 0.2});
+            setTimeout(() => {
+                $("#p0")[0].src = data[i];
+                $("#p0").css({"opacity": 1});
+                $("#precessionImg > a").attr("href", data[i]);
+            }, 400);
+            i = i == 3 ? 0 : i + 1;
+        }, 4000);
     }
 }
